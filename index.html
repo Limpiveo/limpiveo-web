@@ -251,9 +251,14 @@
   footer ul li a:hover{color:#fff}
   .foot-bottom{border-top:1px solid rgba(255,255,255,.12);padding-top:24px;font-size:.85rem;color:#7f94a6;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 
+  /* Salvaguarda global anti-desbordes horizontales */
+  html,body{max-width:100%;overflow-x:hidden}
+  img,svg{max-width:100%}
   @media(max-width:960px){
     .grid-4{grid-template-columns:1fr 1fr}
     .why-grid{grid-template-columns:1fr 1fr}
+    .diff-grid{grid-template-columns:1fr 1fr}
+    .testi-grid{grid-template-columns:1fr 1fr}
     .serv-grid{grid-template-columns:1fr;gap:38px}
     .serv-ph img{height:340px}
     .steps-grid{grid-template-columns:1fr 1fr}
@@ -264,15 +269,32 @@
     .burger{display:block}
   }
   @media(max-width:560px){
-    .grid-4,.why-grid,.form-grid,.steps-grid,.serv-list{grid-template-columns:1fr;columns:1}
-    .form-wrap{padding:30px 22px}
-    .hero-inner{padding:70px 0 60px}
-    .hero h1{font-size:2rem}
+    .wrap{padding:0 20px}
+    .grid-4,.why-grid,.diff-grid,.testi-grid,.form-grid,.steps-grid,.serv-list{grid-template-columns:1fr;columns:1}
+    .form-wrap{padding:28px 20px}
+    .hero-inner{padding:66px 0 56px}
+    .hero h1{font-size:1.85rem;line-height:1.2}
+    .hero p{font-size:1.02rem}
+    .hero-meta{gap:26px;margin-top:40px}
+    .head h2{font-size:1.65rem}
+    .head p{font-size:1rem}
+    section{padding:60px 0}
+    .guarantee .wrap{flex-direction:column;gap:16px;padding:28px 20px;text-align:center}
+    .guarantee h3{font-size:1.25rem}
+    .trust .wrap{flex-direction:column;align-items:flex-start;gap:16px}
+    .trust .items{flex-direction:column;gap:12px}
+    .serv-ph img{height:260px}
+    .serv-list{margin-bottom:24px}
+    .sv-hero h1{font-size:1.75rem}
+    .cta h2{font-size:1.6rem}
+    .form-grid{gap:16px}
     .ck-banner{left:10px;right:10px;bottom:10px;padding:16px 18px;border-radius:12px}
     .ck-banner h4{font-size:.98rem;margin-bottom:4px}
     .ck-banner p{font-size:.82rem;margin-bottom:12px;line-height:1.5}
     .ck-actions{gap:8px}
-    .ck-actions .btn{padding:9px 16px;font-size:.84rem;flex:1;justify-content:center;min-width:0}
+    .ck-actions .btn{padding:9px 14px;font-size:.82rem;flex:1;justify-content:center;min-width:0}
+    .modal-box{padding:28px 22px}
+    .foot-bottom{flex-direction:column;align-items:flex-start;gap:8px}
   }
 </style>
 </head>
@@ -325,8 +347,8 @@
   <div class="wrap">
     <div class="gi"><svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
     <div class="gt">
-      <h3>Primera limpieza de prueba, sin compromiso</h3>
-      <p>Pruébanos antes de decidir. Si el resultado no te convence, no hay nada que te ate. Trabajamos con garantía de satisfacción en cada servicio.</p>
+      <h3>Garantía de satisfacción en cada servicio</h3>
+      <p>Trabajamos con un alto estándar de calidad y supervisamos cada limpieza. Si algo no cumple lo acordado, lo resolvemos cuanto antes.</p>
     </div>
   </div>
 </div>
@@ -490,7 +512,7 @@
       </div>
       <div class="tc">
         <div class="stars">★★★★★</div>
-        <p>"Pedimos presupuesto y lo tuvimos al día siguiente. Trato cercano y resultado excelente desde la primera limpieza."</p>
+        <p>"Pedimos presupuesto y lo tuvimos al día siguiente. Trato cercano y un resultado excelente en cada visita."</p>
         <div class="who">Comunidad de propietarios · Madrid</div>
       </div>
       <div class="tc">
@@ -561,7 +583,7 @@
       <details class="fq"><summary>¿Con qué frecuencia podéis venir a limpiar?</summary><p>La que necesites: diaria, varios días por semana, semanal, quincenal o puntual. Diseñamos el plan de limpieza a la medida de tu espacio y tu actividad.</p></details>
       <details class="fq"><summary>¿Trabajáis fuera del horario de mi empresa?</summary><p>Sí. Limpiamos a primera hora, por la tarde, de noche o en fin de semana para no interferir en tu actividad.</p></details>
       <details class="fq"><summary>¿En qué zonas de Madrid trabajáis?</summary><p>Damos servicio de limpieza en Madrid capital y en toda la Comunidad: Alcobendas, Pozuelo, Las Rozas, Majadahonda, Getafe, Leganés, Alcorcón, Móstoles, Coslada, Torrejón y más. Consúltanos por tu zona.</p></details>
-      <details class="fq"><summary>¿Hay permanencia?</summary><p>No atamos a nadie con permanencias abusivas. Puedes empezar con una primera limpieza de prueba y decidir después.</p></details>
+      <details class="fq"><summary>¿Hay permanencia?</summary><p>No atamos a nadie con permanencias abusivas. Diseñamos un plan flexible que puedes ajustar según tus necesidades.</p></details>
     </div>
   </div>
 </section>

@@ -251,9 +251,13 @@
   footer ul li a:hover{color:#fff}
   .foot-bottom{border-top:1px solid rgba(255,255,255,.12);padding-top:24px;font-size:.85rem;color:#7f94a6;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 
+  html,body{max-width:100%;overflow-x:hidden}
+  img,svg{max-width:100%}
   @media(max-width:960px){
     .grid-4{grid-template-columns:1fr 1fr}
     .why-grid{grid-template-columns:1fr 1fr}
+    .diff-grid{grid-template-columns:1fr 1fr}
+    .testi-grid{grid-template-columns:1fr 1fr}
     .serv-grid{grid-template-columns:1fr;gap:38px}
     .serv-ph img{height:340px}
     .steps-grid{grid-template-columns:1fr 1fr}
@@ -264,15 +268,27 @@
     .burger{display:block}
   }
   @media(max-width:560px){
-    .grid-4,.why-grid,.form-grid,.steps-grid,.serv-list{grid-template-columns:1fr;columns:1}
-    .form-wrap{padding:30px 22px}
-    .hero-inner{padding:70px 0 60px}
-    .hero h1{font-size:2rem}
+    .wrap{padding:0 20px}
+    .grid-4,.why-grid,.diff-grid,.testi-grid,.form-grid,.steps-grid,.serv-list{grid-template-columns:1fr;columns:1}
+    .form-wrap{padding:28px 20px}
+    .hero-inner{padding:66px 0 56px}
+    .hero h1{font-size:1.85rem;line-height:1.2}
+    .head h2{font-size:1.65rem}
+    section{padding:60px 0}
+    .guarantee .wrap{flex-direction:column;gap:16px;padding:28px 20px;text-align:center}
+    .trust .wrap{flex-direction:column;align-items:flex-start;gap:16px}
+    .trust .items{flex-direction:column;gap:12px}
+    .serv-ph img{height:260px}
+    .sv-hero h1{font-size:1.75rem}
+    .sv-body{padding:54px 0}
+    .cta h2{font-size:1.6rem}
     .ck-banner{left:10px;right:10px;bottom:10px;padding:16px 18px;border-radius:12px}
     .ck-banner h4{font-size:.98rem;margin-bottom:4px}
     .ck-banner p{font-size:.82rem;margin-bottom:12px;line-height:1.5}
     .ck-actions{gap:8px}
-    .ck-actions .btn{padding:9px 16px;font-size:.84rem;flex:1;justify-content:center;min-width:0}
+    .ck-actions .btn{padding:9px 14px;font-size:.82rem;flex:1;justify-content:center;min-width:0}
+    .modal-box{padding:28px 22px}
+    .foot-bottom{flex-direction:column;align-items:flex-start;gap:8px}
   }
 </style>
 
